@@ -37,7 +37,7 @@ class ParticleRenderer : GLSurfaceView.Renderer {
 
 
     override fun onSurfaceCreated(gl: GL10?, config: javax.microedition.khronos.egl.EGLConfig?) {
-        GLES20.glClearColor(255.0f, 255.0f, 255.0f, 1.0f)
+        GLES20.glClearColor(0.0f, 0.0f, 0.0f, 1.0f)
 
         // Генерация и компиляция шейдеров
         val vertexShader = loadShader(GLES20.GL_VERTEX_SHADER, vertexShaderCode)
@@ -83,7 +83,7 @@ class ParticleRenderer : GLSurfaceView.Renderer {
         GLES20.glEnableVertexAttribArray(positionHandle)
         GLES20.glVertexAttribPointer(positionHandle, 3, GLES20.GL_FLOAT, false, 0, 0)
 
-        GLES20.glUniform4f(colorHandle, 100.0f, 100.0f, 100.0f, 100.0f) // Цвет белый
+        GLES20.glUniform4f(colorHandle, 255.0f, 255.0f, 255.0f, 255.0f) // Цвет белый
         GLES20.glUniform1f(pointSizeHandle, 5.0f) // Размер точки
 
         // Рисуем точки
@@ -106,7 +106,7 @@ class ParticleRenderer : GLSurfaceView.Renderer {
 
     private fun generateParticles() {
         val random = Random()
-        for (i in 0 until 100) {
+        for (i in 0 until 1000) {
             val x = random.nextFloat() * 2.0f - 1.0f // Значения от -1.0 до 1.0
             val y = random.nextFloat() * 2.0f - 1.0f
             val z = 0.0f
