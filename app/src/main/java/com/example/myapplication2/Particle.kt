@@ -1,6 +1,6 @@
 package com.example.myapplication2
 
-data class Particle(
+data class ParticleGPT(
     var x: Float,
     var y: Float,
     var z: Float,

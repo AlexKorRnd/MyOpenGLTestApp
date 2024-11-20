@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         val btn: Button = findViewById(R.id.btn)
-        val particleView: ParticleGLSurfaceView = findViewById(R.id.particleView)
+        //val particleView: ParticleGLSurfaceView = findViewById(R.id.particleView)
 
         btn.setOnClickListener {
 
