@@ -1,21 +1,120 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <com.example.myapplication2.ParticleGLSurfaceView
-        android:id="@+id/particleView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/btn"
-        android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/glSurfaceBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GlSurface" />
+
+            <Button
+                android:id="@+id/textureViewBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="TextureView" />
+
+            <Button
+                android:id="@+id/drawableBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Drawable" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+
+<!--    <com.example.myapplication2.ParticleTextureView-->
+<!--        android:id="@+id/particleView2"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="16dp"/>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
-        android:layout_gravity="bottom" />
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/viewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </ScrollView>
 
 
 
-</FrameLayout>
+<!--        <com.example.myapplication2.ParticleGLSurfaceView-->
+<!--            android:id="@+id/particleView1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:layout_marginTop="16dp"/>-->
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="24sp"-->
+<!--        android:layout_marginTop="350dp" />-->
+
+
+
+<!--        <com.example.myapplication2.ParticleGLSurfaceView-->
+<!--            android:id="@+id/particleView2"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginTop="16dp"/>-->
+
+<!--        <com.example.myapplication2.ParticleGLSurfaceView-->
+<!--            android:id="@+id/particleView3"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginTop="16dp"/>-->
+
+<!--        <com.example.myapplication2.ParticleGLSurfaceView-->
+<!--            android:id="@+id/particleView4"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginTop="16dp"/>-->
+
+<!--        <com.example.myapplication2.ParticleGLSurfaceView-->
+<!--            android:id="@+id/particleView5"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginTop="16dp"/>-->
+
+<!--        <com.example.myapplication2.ParticleGLSurfaceView-->
+<!--            android:id="@+id/particleView6"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginTop="16dp"/>-->
+
+<!--        <com.example.myapplication2.ParticleGLSurfaceView-->
+<!--            android:id="@+id/particleView7"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginTop="16dp"/>-->
+
+</LinearLayout>
